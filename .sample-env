@@ -1,0 +1,15 @@
+SERVER_APP_NAME="<your App Name>"
+SERVER_PORT=3000 # Or any other port you want your Node app to run at.
+
+# For an external / cloud DB server
+DB_HOST="<your DB host>"
+DB_USER="<your username to login to *remote* DB host>"
+DB_PASSWORD="<your password to login *remote* to DB host>"
+DB_DATABASE="<<your DB name>>"
+
+# Or use these instead (for a local Docker DB server):
+# RUN IT WITH: docker run -p 3306:3306 --name localMysql -e MYSQL_ROOT_PASSWORD=pass -e MYSQL_DATABASE=sequelizeTest -d mysql:5.7
+# DB_HOST="localhost"
+# DB_USER="root"
+# DB_PASSWORD="pass"
+# DB_DATABASE="<your DB name>"
