@@ -10,11 +10,11 @@ log4js.configure({
             transport: {
                 plugin: 'smtp',
                 options: {
-                    host: process.env.MAILGUN_SMTP_HOST,
-                    port: 587,
+                    host: process.env.SMTP_HOST,
+                    port: process.env.SMTP_PORT,
                     auth: {
-                        user: process.env.MAILGUN_USER,
-                        pass: process.env.MAILGUN_PASSORD
+                        user: process.env.SMTP_USER,
+                        pass: process.env.SMTP_PASSWORD
                     }
                 }
             },
